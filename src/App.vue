@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppHero />
+    <AppMain />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+
+import AppHero from "./components/AppHero";
+import AppMain from "./components/AppMain";
+// import stickyjs from 'sticky-js';
+
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    AppHero,
+    AppMain,
+  },
+  mounted() {
+    // console.log('mounted hook worked')
+    // new stickyjs('.select');
+    // new stickyjs('.header-select')
+    // console.log(sticky);
   }
-}
+};
 </script>
 
 <style>
@@ -23,6 +35,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+html. body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size:18px;
+}
+
 </style>
