@@ -23,5 +23,5 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### My test project
+### My test project from 2019 year
 https://dartfader.github.io/LifeHacker-Lotto/
